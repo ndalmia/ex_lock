@@ -1,7 +1,7 @@
 defmodule ExLock.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
 
   def project do
     [
@@ -12,8 +12,7 @@ defmodule ExLock.MixProject do
       description: description(),
       package: package(),
       source_url: "https://github.com/ndalmia/ex_lock/",
-      deps: deps(),
-      docs: docs()
+      deps: deps()
     ]
   end
 
@@ -44,16 +43,6 @@ defmodule ExLock.MixProject do
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
-    ]
-  end
-
-  defp docs do
-    [
-      extras: [
-      ],
-      source_ref: "v#{@version}",
-      source_url: "https://github.com/ndalmia/ex_lock",
-      skip_undefined_reference_warnings_on: ["CHANGELOG.md"]
     ]
   end
 end
